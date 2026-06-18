@@ -5,14 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Zion — Portfolio</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Nunito:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <!-- NAV -->
   <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand logo" href="#hero">ZION</a>
@@ -30,7 +27,6 @@
     </div>
   </nav>
 
-  <!-- HERO -->
   <section id="hero">
     <div class="hero-inner">
       <p class="hero-eyebrow">Multimedia Designer &nbsp;&bull;&nbsp; Digital Artist &nbsp;&bull;&nbsp; Cosplayer</p>
@@ -41,7 +37,19 @@
     </div>
   </section>
 
-  <!-- ABOUT -->
+  <section id="cosplay">
+    <div class="container-fluid px-3">
+      <div class="row g-2">
+        <div class="col-4"><div class="photo-wrap portrait"><img src="photos/1.jpg" alt="Cosplay 1" loading="lazy" /></div></div>
+        <div class="col-4"><div class="photo-wrap portrait"><img src="photos/2.jpg" alt="Cosplay 2" loading="lazy" /></div></div>
+        <div class="col-4"><div class="photo-wrap portrait"><img src="photos/3.jpg" alt="Cosplay 3" loading="lazy" /></div></div>
+        <div class="col-6"><div class="photo-wrap landscape"><img src="photos/4.jpg" alt="Cosplay 4" loading="lazy" /></div></div>
+        <div class="col-6"><div class="photo-wrap landscape"><img src="photos/5.jpg" alt="Cosplay 5" loading="lazy" /></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT ZION -->
   <section id="about" class="section-pad">
     <div class="container">
       <h2 class="section-title">About</h2>
@@ -49,8 +57,8 @@
       <div class="row justify-content-center mt-5">
         <div class="col-lg-7 col-md-9">
           <p class="about-text">
-            I am a 21-year-old creative based in the Philippines. I work as a Multimedia Designer 
-            for LYON and take digital art commissions under the name Zion. When I am not designing, 
+            I am a 21-year-old creative based in the Philippines. I work as a Multimedia Designer
+            for LYON and take digital art commissions under the name Zion. When I am not designing,
             I cosplay, play League of Legends, and indulge in horror games and the spiciest food I can find.
           </p>
           <div class="about-tags mt-4">
@@ -71,7 +79,7 @@
     </div>
   </section>
 
-  <!-- SKILLS -->
+  <!-- MEIN SKILLS -->
   <section id="skills" class="section-pad alt-bg">
     <div class="container">
       <h2 class="section-title">Skills</h2>
@@ -103,85 +111,31 @@
     </div>
   </section>
 
-  <!-- PROJECTS / GALLERY -->
+  <!-- BUNCH OF PROJECTS -->
   <section id="projects" class="section-pad">
     <div class="container">
       <h2 class="section-title">Projects</h2>
       <div class="rune-divider sm"><span></span><i class="rune-gem"></i><span></span></div>
       <p class="section-sub mt-2">Commission Work &amp; Creative Projects</p>
-      <div class="row mt-5 g-3" id="gallery">
+      <div class="row mt-5 g-3">
 
-        <div class="col-6 col-md-4">
-          <div class="gallery-item"
-            data-bs-toggle="modal" data-bs-target="#imgModal"
-            data-img="https://placehold.co/800x800/E8D5F0/9B78C2?text=Commission+1"
-            data-title="Commission #1"
-            data-caption="Character illustration. Digital medium. Replace this caption with the piece details.">
-            <img src="https://placehold.co/400x400/E8D5F0/9B78C2?text=Commission+1" alt="Commission 1" loading="lazy" />
-            <div class="gallery-hover">View</div>
-          </div>
-        </div>
+        <div class="col-6 col-md-4"><div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imgModal" data-img="https://placehold.co/800x800/E8D5F0/9B78C2?text=Commission+1" data-title="Commission #1" data-caption="Character illustration. Digital medium. Replace with your piece details."><img src="https://placehold.co/400x400/E8D5F0/9B78C2?text=Commission+1" alt="Commission 1" loading="lazy" /><div class="gallery-hover">View</div></div></div>
 
-        <div class="col-6 col-md-4">
-          <div class="gallery-item"
-            data-bs-toggle="modal" data-bs-target="#imgModal"
-            data-img="https://placehold.co/800x800/F4D6E4/C97A9B?text=Commission+2"
-            data-title="Commission #2"
-            data-caption="Portrait commission. Digital medium. Replace this caption with the piece details.">
-            <img src="https://placehold.co/400x400/F4D6E4/C97A9B?text=Commission+2" alt="Commission 2" loading="lazy" />
-            <div class="gallery-hover">View</div>
-          </div>
-        </div>
+        <div class="col-6 col-md-4"><div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imgModal" data-img="https://placehold.co/800x800/F4D6E4/C97A9B?text=Commission+2" data-title="Commission #2" data-caption="Portrait commission. Digital medium. Replace with your piece details."><img src="https://placehold.co/400x400/F4D6E4/C97A9B?text=Commission+2" alt="Commission 2" loading="lazy" /><div class="gallery-hover">View</div></div></div>
 
-        <div class="col-6 col-md-4">
-          <div class="gallery-item"
-            data-bs-toggle="modal" data-bs-target="#imgModal"
-            data-img="https://placehold.co/800x800/D6E8F4/7AB0C9?text=Commission+3"
-            data-title="Commission #3"
-            data-caption="Concept art piece. Digital medium. Replace this caption with the piece details.">
-            <img src="https://placehold.co/400x400/D6E8F4/7AB0C9?text=Commission+3" alt="Commission 3" loading="lazy" />
-            <div class="gallery-hover">View</div>
-          </div>
-        </div>
+        <div class="col-6 col-md-4"><div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imgModal" data-img="https://placehold.co/800x800/D6E8F4/7AB0C9?text=Commission+3" data-title="Commission #3" data-caption="Concept art piece. Digital medium. Replace with your piece details."><img src="https://placehold.co/400x400/D6E8F4/7AB0C9?text=Commission+3" alt="Commission 3" loading="lazy" /><div class="gallery-hover">View</div></div></div>
 
-        <div class="col-6 col-md-4">
-          <div class="gallery-item"
-            data-bs-toggle="modal" data-bs-target="#imgModal"
-            data-img="https://placehold.co/800x800/EDE0F5/A87CC5?text=Commission+4"
-            data-title="Commission #4"
-            data-caption="Chibi design commission. Digital medium. Replace this caption with the piece details.">
-            <img src="https://placehold.co/400x400/EDE0F5/A87CC5?text=Commission+4" alt="Commission 4" loading="lazy" />
-            <div class="gallery-hover">View</div>
-          </div>
-        </div>
+        <div class="col-6 col-md-4"><div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imgModal" data-img="https://placehold.co/800x800/EDE0F5/A87CC5?text=Commission+4" data-title="Commission #4" data-caption="Chibi design commission. Digital medium. Replace with your piece details."><img src="https://placehold.co/400x400/EDE0F5/A87CC5?text=Commission+4" alt="Commission 4" loading="lazy" /><div class="gallery-hover">View</div></div></div>
 
-        <div class="col-6 col-md-4">
-          <div class="gallery-item"
-            data-bs-toggle="modal" data-bs-target="#imgModal"
-            data-img="https://placehold.co/800x800/F5E0E8/C57C9B?text=Commission+5"
-            data-title="Commission #5"
-            data-caption="Fanart illustration. Digital medium. Replace this caption with the piece details.">
-            <img src="https://placehold.co/400x400/F5E0E8/C57C9B?text=Commission+5" alt="Commission 5" loading="lazy" />
-            <div class="gallery-hover">View</div>
-          </div>
-        </div>
+        <div class="col-6 col-md-4"><div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imgModal" data-img="https://placehold.co/800x800/F5E0E8/C57C9B?text=Commission+5" data-title="Commission #5" data-caption="Fanart illustration. Digital medium. Replace with your piece details."><img src="https://placehold.co/400x400/F5E0E8/C57C9B?text=Commission+5" alt="Commission 5" loading="lazy" /><div class="gallery-hover">View</div></div></div>
 
-        <div class="col-6 col-md-4">
-          <div class="gallery-item"
-            data-bs-toggle="modal" data-bs-target="#imgModal"
-            data-img="https://placehold.co/800x800/E0EDF5/7AA8C5?text=Commission+6"
-            data-title="Commission #6"
-            data-caption="Scene illustration. Digital medium. Replace this caption with the piece details.">
-            <img src="https://placehold.co/400x400/E0EDF5/7AA8C5?text=Commission+6" alt="Commission 6" loading="lazy" />
-            <div class="gallery-hover">View</div>
-          </div>
-        </div>
+        <div class="col-6 col-md-4"><div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imgModal" data-img="https://placehold.co/800x800/E0EDF5/7AA8C5?text=Commission+6" data-title="Commission #6" data-caption="Scene illustration. Digital medium. Replace with your piece details."><img src="https://placehold.co/400x400/E0EDF5/7AA8C5?text=Commission+6" alt="Commission 6" loading="lazy" /><div class="gallery-hover">View</div></div></div>
 
       </div>
     </div>
   </section>
 
-  <!-- LIGHTBOX MODAL -->
+  <!-- LIGHTBOX -->
   <div class="modal fade" id="imgModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content">
@@ -197,7 +151,6 @@
     </div>
   </div>
 
-  <!-- FOOTER -->
   <footer>
     <div class="container text-center">
       <p>Myca Fortin &mdash; Zion &bull; 2025</p>
