@@ -14,7 +14,6 @@ if (imgModal) {
   });
 }
 
-// === SCROLL REVEAL ===
 const revealTargets = document.querySelectorAll(
   '.skill-card, .gallery-item, .about-text, .about-tags, .about-links'
 );
@@ -33,7 +32,6 @@ revealTargets.forEach((el) => {
   revealObserver.observe(el);
 });
 
-// === NAVBAR TRANSPARENCY ON SCROLL ===
 const nav = document.getElementById('mainNav');
 window.addEventListener('scroll', () => {
   if (window.scrollY > 60) {
