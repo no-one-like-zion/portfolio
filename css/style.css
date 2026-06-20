@@ -10,8 +10,7 @@ body { font-family: 'Nunito', sans-serif; background: var(--bg); color: var(--te
 #mainNav { background: rgba(247,240,250,0.95); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(201,168,224,0.3); padding: .85rem 0; }
 .logo { font-family: 'Cinzel', serif; font-weight: 700; font-size: 1.25rem; color: var(--text) !important; letter-spacing: .2em; text-decoration: none; }
 .nav-link { font-family: 'Cinzel', serif; font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted) !important; transition: color .2s; padding: .25rem 0 !important; }
-.nav-link:hover { color: var(--accent) !important; }
-.nav-link.active { color: var(--accent) !important; }
+.nav-link:hover, .nav-link.active { color: var(--accent) !important; }
 .kofi-link { color: var(--gold) !important; }
 .kofi-link:hover { color: var(--accent2) !important; }
 
@@ -63,18 +62,26 @@ body { font-family: 'Nunito', sans-serif; background: var(--bg); color: var(--te
 .modal-caption { font-size: .88rem; color: var(--muted); font-style: italic; }
 
 #backToTop {
-  position: fixed; bottom: 2rem; right: 2rem; z-index: 999;
-  width: 56px; height: 56px; border-radius: 12px;
-  border: 1px solid rgba(201,168,224,.4);
-  background: none; box-shadow: 0 4px 20px rgba(201,168,224,.4);
-  padding: 0; cursor: pointer; overflow: hidden;
-  display: flex; align-items: center; justify-content: center;
-  opacity: 0; pointer-events: none;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 9999;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid rgba(201,168,224,.5);
+  background: var(--bg);
+  box-shadow: 0 4px 20px rgba(201,168,224,.45);
+  padding: 0;
+  cursor: pointer;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
   transition: opacity .3s, transform .3s, box-shadow .2s;
 }
 #backToTop.visible { opacity: 1; pointer-events: auto; }
-#backToTop:hover { transform: translateY(-3px); box-shadow: 0 8px 28px rgba(201,168,224,.6); }
-#backToTop img { width: 56px; height: 56px; object-fit: cover; display: block; }
+#backToTop:hover { transform: translateY(-3px); box-shadow: 0 8px 28px rgba(201,168,224,.65); }
+#backToTop img { width: 48px; height: 48px; object-fit: cover; display: block; }
 
 footer { padding: 3rem 0; border-top: 1px solid rgba(201,168,224,.3); }
 footer p { font-family: 'Cinzel', serif; font-size: .68rem; letter-spacing: .16em; color: var(--muted); margin-bottom: .5rem; }
@@ -87,5 +94,6 @@ footer p { font-family: 'Cinzel', serif; font-size: .68rem; letter-spacing: .16e
 @media (max-width: 576px) {
   .section-pad { padding: 4rem 0; }
   .skill-card { padding: 1.75rem 1.5rem; }
-  #backToTop { width: 48px; height: 48px; bottom: 1.25rem; right: 1.25rem; }
+  #backToTop { width: 42px; height: 42px; bottom: 1.25rem; right: 1.25rem; }
+  #backToTop img { width: 42px; height: 42px; }
 }
